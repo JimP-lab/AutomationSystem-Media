@@ -11,3 +11,5 @@ Switchboard: https://www.switchboard.ai/
 
 Social Bee: https://socialbee.com/ 
 
+Zapier: https://zapier.com/
+
