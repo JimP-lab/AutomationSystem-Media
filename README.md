@@ -3,4 +3,8 @@ AutomationSystem-Media is an automatic system that posts every hour posts in soc
 
 ![Platform-DK - draft](https://github.com/user-attachments/assets/3025b393-5c14-463b-8731-2545cb18d065)
 
-AutomationSystem-Media was made in zapier.
+AutomationSystem-Media was made in zapier and with the assistance of Social ai automation assistant.
+
+here is the Socia ai automation assistant: 
+https://chatgpt.com/g/g-67af3d18d6f88191867abe3aac0bd223-social-ai-automation-assistant
+
