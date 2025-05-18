@@ -6,6 +6,8 @@ AutomationSystem-Media is an automatic system that posts every hour posts in soc
 AutomationSystem-Media was made in zapier and with the assistance of Social ai automation assistant.
 
 Social ai automation assistant: https://chatgpt.com/g/g-67af3d18d6f88191867abe3aac0bd223-social-ai-automation-assistant
+
 Switchboard: https://www.switchboard.ai/ 
+
 Social Bee: https://socialbee.com/ 
 
