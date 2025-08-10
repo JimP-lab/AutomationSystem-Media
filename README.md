@@ -1,6 +1,6 @@
 ## AutomationSystem-Media 
 
-AutomationSystem-Media is an automatic system that posts every hour posts in social media using switchboard for creating image posts and social bee for uploading and managing and by using the graph api of meta is bringing the latest posts that were uploaded and it is matching the corresponding link to corresponding post.
+AutomationSystem-Media is an automatic system that posts every hour posts in social media using switchboard for creating image posts and social bee for uploading and managing and by using the graph api of meta is bringing the latest posts that were uploaded and it is matching the corresponding link to corresponding post and it using coding to extract the content of from rss feeds.
 
 ### Technologies and Tools
 
