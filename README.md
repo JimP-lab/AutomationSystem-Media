@@ -17,10 +17,13 @@ AutomationSystem-Media is an automatic system that posts every hour posts in soc
 - [Switchboard](https://www.switchboard.ai)
 - [Social Bee](https://socialbee.com)
 
-## Additional Resources ##  
-- [Social ai automation assistant](https://chatgpt.com/g/g-67af3d18d6f88191867abe3aac0bd223-social-ai-automation-assistant)
-- [Graph Api](https://developers.facebook.com/docs/graph-api)
+## Additional Resources ##   
 - [Business Manager](https://business.facebook.com/business)
+- [Graph Api](https://developers.facebook.com/docs/graph-api)
+- [Postman](https://www.postman.com)
+- [How to create image templates using switchboard canvas](https://youtu.be/1dwn6ZKtoJc?si=G0oiOgaJhSpMqVUx) 
+- [How to run api calls using Switchboard Canvas](https://youtu.be/mxVGxCaEu6k?si=TJd041RA0HRjADxM)
+- [Social ai automation assistant](https://chatgpt.com/g/g-67af3d18d6f88191867abe3aac0bd223-social-ai-automation-assistant)
 
 ## Business Manager Meta Dashboard ## 
 <img width="900" height="908" alt="Screenshot 2025-10-11 at 21-57-06 Meta Business Suite" src="https://github.com/user-attachments/assets/e0ef73dc-004b-41c7-b43f-65df4a5a48d1"/>
