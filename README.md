@@ -1,6 +1,6 @@
 ## AutomationSystem-Media ## 
 
-AutomationSystem-Media is an automatic system that posts to social media every hour. It uses Switchboard to create image posts, SocialBee to upload and manage posts, and the Meta Graph API to fetch the latest posts. The system matches the correct links with each post and uses code to extract content from RSS feeds, making it possible to manage and post to multiple websites at the same time using Business Manager. This project was created with help from the Social AI Automation Assistant.
+AutomationSystem-Media is an automatic system that posts to social media every hour by extracting content from RSS feeds. It uses Switchboard to create image posts, SocialBee to upload and manage posts, and the Meta Graph API to fetch the latest posts and match the corresponding links to their corresponding posts while managing multiple websites simultaneously using Meta's Business Manager.
 
  ## Workflow ##  
 ![Platform-DK - draft](https://github.com/user-attachments/assets/3025b393-5c14-463b-8731-2545cb18d065)
