@@ -1,9 +1,5 @@
 # Meta Graph API Integration Guide
 
-A comprehensive step-by-step guide for integrating Meta's Graph API to automate page management, content posting, and engagement tracking across multiple Facebook pages.
-
----
-
 ## Overview
 
 This guide outlines the complete process of setting up Meta Graph API integration to manage multiple Facebook pages, generate access tokens, and automate commenting and engagement through Zapier. The workflow involves creating business applications, generating system user tokens, converting them to page access tokens, and automating content posting through Postman and Zapier.
@@ -19,7 +15,7 @@ This guide outlines the complete process of setting up Meta Graph API integratio
 
 ### Process
 
-You were added as an admin to all the Facebook pages that required integration. This administrative access is essential for creating applications and managing tokens for those pages.
+This administrative access is essential for creating applications and managing tokens for those pages.
 
 ---
 
@@ -39,9 +35,7 @@ To retrieve the Page ID from Facebook:
 1. Go to your **Facebook Page Settings**
 2. Navigate to the **About** tab
 3. Scroll down to find your **Page ID** (it's a unique numerical identifier)
-4. Copy and save this Page ID securely
-
-**Note:** The Page ID is located in the About section of your Facebook page. This location remains consistent with current Meta practices.
+4. Copy and save this Page ID securely.
 
 ---
 
@@ -49,7 +43,12 @@ To retrieve the Page ID from Facebook:
 
 When creating an app inside Meta Graph API, you will need to configure the following credentials:
 
-**[Placeholder for App Credentials Screenshot - Image 1]**
+<img width="1236" height="607" alt="Screenshot 2025-07-03 at 14-03-46 Allyou-7-2-2025-App - App settings - Meta for Developers" src="https://github.com/user-attachments/assets/cbe267bc-dbbb-49e2-ace8-086552af935a" />
+
+<img width="1193" height="564" alt="Screenshot 2025-07-03 at 14-04-15 Allyou-7-2-2025-App - App settings - Meta for Developers" src="https://github.com/user-attachments/assets/bc464c2b-d324-4bc7-ae7b-de4ac37cd96c" />
+
+<img width="1290" height="435" alt="Screenshot 2025-07-03 at 14-04-28 Allyou-7-2-2025-App - App settings - Meta for Developers" src="https://github.com/user-attachments/assets/d0bcef76-303a-44e4-b393-d3ceabe16495" />
+
 
 Key credentials required:
 - **App ID:** Unique identifier for your application
@@ -57,7 +56,7 @@ Key credentials required:
 - **Client Token:** Used for non-authenticated requests
 - **Business Account:** Associated business account information
 
-These credentials should be securely stored and never exposed in public repositories or client-side code.
+These credentials should be securely stored and never exposed.
 
 ---
 
@@ -113,7 +112,7 @@ To convert your system user token to page-specific access tokens:
 
 After obtaining your temporary system user token from Meta Business Manager, you'll use Postman to convert it and retrieve all page access tokens.
 
-**[Placeholder for Postman API Call Screenshot - Image 2]**
+<img width="1541" height="452" alt="Postman-Api-Call" src="https://github.com/user-attachments/assets/ccfa8c18-bc04-436d-add5-b37238225b96" />
 
 ### API Call Process
 
@@ -136,7 +135,8 @@ The response will contain all page-specific access tokens in a single call, prov
 
 Once you have obtained the page access tokens, conduct a verification test to ensure proper configuration:
 
-**[Placeholder for Postman Test Comment Screenshot - Image 3]**
+<img width="685" height="652" alt="Postman-Test-Comment" src="https://github.com/user-attachments/assets/d2c3325b-cffa-412d-9420-bfd8df5f634f" />
+
 
 ### Test Comment Process
 
@@ -179,13 +179,7 @@ With verified credentials in place, the automation workflow was implemented usin
 
 ### Phase 2: Processing and Posting Comments
 
-1. **Create a second Zapier action** using Meta/Facebook integration
-2. **Map the data:**
-   - Use the **Post ID** from the Google Sheet
-   - Apply the **Page Access Token** to authenticate
-   - Use the **Article Link** as your comment content
-
-3. **Configure the action** to post a comment to the corresponding post with the corresponding article link
+1. **Create a script using Code By Zapier and add in the input value the post id from the google sheet trigger and the page acess token.
 
 ### Results
 
@@ -193,73 +187,14 @@ The automation successfully posted corresponding links in corresponding posts. E
 
 ---
 
-## Step 9: Content Moderation and Professional Standards
+## Step 9: Presentantion and Showcase
 
-### Quality Assurance Process
+After successfull testing during the process, the implemantation was finally integrated at the facebook post:
 
-After successful automation testing, content moderation was implemented to ensure professional presentation:
-
-**[Placeholder for Facebook First Comment Screenshot - Image 4]**
-
-### Moderation Guidelines
-
-Content is moderated to:
-
-1. **Appear Professional:** Ensure all comments reflect professional standards appropriate for business context
-2. **Use Simple English:** Write in clear, accessible English suitable for all audience members
-3. **Ensure Readability:** Format content for easy consumption by both HR managers and technical professionals
-4. **Maintain Consistency:** Keep tone and style uniform across all posted content
-5. **Facilitate Review:** Present content in a format suitable for review by both technical and non-technical stakeholders
-
-This professional approach ensures that all automated content posting represents your organization appropriately across all managed Facebook pages.
-
----
-
-## Security Best Practices
-
-1. **Token Management:**
-   - Never hardcode access tokens in scripts or applications
-   - Store tokens securely using environment variables or secure vault systems
-   - Rotate tokens periodically as recommended by Meta
-
-2. **Credential Protection:**
-   - Keep App IDs, App Secrets, and System User tokens confidential
-   - Use Zapier's built-in credential storage for sensitive data
-   - Monitor token usage and revoke compromised tokens immediately
-
-3. **Permission Minimization:**
-   - Assign system users only the minimum necessary permissions
-   - Regularly audit page access and user assignments
-   - Remove system users who no longer need access
-
----
-
-## Troubleshooting
-
-### Common Issues
-
-**"Invalid OAuth 2.0 Access Token" Error:**
-- Verify you are using a Page Access Token, not a System User token
-- Confirm the system user is assigned to the specific page in Business Manager
-- Check that the token has not expired (regenerate if necessary)
-- Ensure all required scopes are present in the token
-
-**Post Not Publishing:**
-- Verify the Post ID is correct and accessible
-- Confirm the page access token has `pages_manage_posts` scope
-- Check that your account maintains admin rights to the page
-- Review Meta's current API rate limits
-
----
+<img width="697" height="533" alt="Facebook-First-Comment" src="https://github.com/user-attachments/assets/958b4122-63a3-4d20-bbc0-1f0f44dbd98f" />
 
 ## Conclusion
 
 This integration workflow provides a scalable, automated solution for managing content across multiple Facebook pages. By combining Meta's Graph API with Zapier's automation platform and Google Sheets as a data source, organizations can efficiently manage page engagement while maintaining professional content standards.
 
 For the latest Meta API documentation and updates, visit the [Meta Developer Portal](https://developers.facebook.com/).
-
----
-
-**Document Version:** 1.0  
-**Last Updated:** June 3, 2026  
-**Maintained by:** JimP-Lab Team
